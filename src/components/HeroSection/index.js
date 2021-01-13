@@ -15,8 +15,8 @@ const HeroSection = () => {
             <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
           </HeroBg>
           <HeroContent>
-            <HeroH1>Soar Counseling, Cody, Wyoming</HeroH1>
-            <HeroP></HeroP>
+            <HeroH1>Soar Counseling</HeroH1>
+            <HeroP>Cody, Wyoming</HeroP>
             <HeroBtnWrapper>
               <Button to='contact'
               onMouseEnter={onHover}

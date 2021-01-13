@@ -34,10 +34,10 @@ export const homeObjTwo = {
 
 export const homeObjThree = {
   id: 'contact',
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
-  topLine:'Soar Counseling',
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine:'Cheri Kreitzmann',
   headline: 'My mission is to embrace and support indivuals who are struggling with emotional challenges',
   description: 'Today you are one step closer to a new you where you feel empowered and on a positive and healthy path to growth and well-being.',
   buttonLabel: 'Send me a message',
@@ -46,5 +46,5 @@ export const homeObjThree = {
   alt: 'profile image',
   dark: true,
   primary: true,
-  darkText: false
+  darkText: true
 }
