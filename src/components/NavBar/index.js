@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib';
+import { animateScroll as scroll } from 'react-scroll'
 import { Nav, NavBarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './NavBar'
 
 const NavBar = ({ toggle }) => {
@@ -18,12 +19,16 @@ const NavBar = ({ toggle }) => {
       window.addEventListener('scroll', changeNav)
     }, [])
 
+    const toggleHome = () => {
+      scroll.scrollToTop();
+    }
+
     return (
         <React.Fragment>
           <IconContext.Provider value={{ color: '#010606' }}>
             <Nav scrollNav={scrollNav}>
               <NavBarContainer>
-                <NavLogo to='/'>
+                <NavLogo to='/' onClick={toggleHome}>
                   SOAR
                 </NavLogo>
                 <MobileIcon onClick={toggle}>
@@ -31,16 +36,40 @@ const NavBar = ({ toggle }) => {
                 </MobileIcon>
                 <NavMenu>
                   <NavItem>
-                    <NavLinks to='about'>About</NavLinks>
+                    <NavLinks to='about'
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact='true'
+                    offset={-80}
+                    >About</NavLinks>
                   </NavItem>
                   <NavItem>
-                    <NavLinks to='blog'>Blog</NavLinks>
+                    <NavLinks to='faq'
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact='true'
+                    offset={-80}
+                    >FAQ</NavLinks>
                   </NavItem>
                   <NavItem>
-                    <NavLinks to='faq'>FAQ</NavLinks>
+                    <NavLinks to='blog'
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact='true'
+                    offset={-80}
+                    >Blog</NavLinks>
                   </NavItem>
                   <NavItem>
-                    <NavLinks to='contact'>Contact</NavLinks>
+                    <NavLinks to='contact'
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact='true'
+                    offset={-80}
+                    >Contact</NavLinks>
                   </NavItem>
                 </NavMenu>
                 <NavBtn>
