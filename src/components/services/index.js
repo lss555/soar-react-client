@@ -14,26 +14,26 @@ import {
 
 const Services = () => {
   return (
-    <ServicesContainer id='blog'>
-      <ServicesH1>Soar Blog</ServicesH1>
+    <ServicesContainer id='services'>
+      <ServicesH1>Services</ServicesH1>
       <ServicesWrapper>
         <ServicesCard>
           <ServicesIcon src={Icon1} />
-          <ServicesH2>Wellness</ServicesH2>
+          <ServicesH2>Equine Therapy</ServicesH2>
           <ServicesP>
             place holder information place holder information
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon2} />
-          <ServicesH2>Health</ServicesH2>
+          <ServicesH2>Group Therapy</ServicesH2>
           <ServicesP>
             place holder information place holder information
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon3} />
-          <ServicesH2>Get Started</ServicesH2>
+          <ServicesH2>individual Therapy</ServicesH2>
           <ServicesP>
             place holder information place holder information
           </ServicesP>

@@ -1,8 +1,14 @@
 import React from 'react';
 import { FooterContainer,FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkTitle, FooterLinkItems, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink } from './Footer'
 import { FaFacebook } from 'react-icons/fa'
+import { animateScroll as scroll } from 'react-scroll'
 
 const Footer = () => {
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
     return (
         <FooterContainer>
           <FooterWrap>
@@ -26,7 +32,7 @@ const Footer = () => {
             </FooterLinksContainer>
             <SocialMedia>
               <SocialMediaWrap>
-                <SocialLogo to='/'>
+                <SocialLogo to='/' onClick={toggleHome}>
                   SOAR
                 </SocialLogo>
                   <WebsiteRights>Soar Counseling Services Inc. © {new Date().getFullYear()}</WebsiteRights>
