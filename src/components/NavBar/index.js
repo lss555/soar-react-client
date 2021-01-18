@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll'
-import { Nav, NavBarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './NavBar'
+import { Nav, NavBarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks } from './NavBar'
 
 const NavBar = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false)
@@ -72,9 +72,6 @@ const NavBar = ({ toggle }) => {
                     >Contact</NavLinks>
                   </NavItem>
                 </NavMenu>
-                <NavBtn>
-                  <NavBtnLink to='sign-in'>Sign In</NavBtnLink>
-                </NavBtn>
               </NavBarContainer>
             </Nav>
           </IconContext.Provider>
