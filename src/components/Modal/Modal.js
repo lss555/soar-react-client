@@ -2,6 +2,7 @@ import React, { useRef, useCallback, useEffect } from 'react'
 import styled from 'styled-components'
 import { MdClose } from 'react-icons/md';
 import { useSpring, animated } from 'react-spring'
+import Contact from './ContactForm'
 
 const Background = styled.div`
   width: 100%;
@@ -98,9 +99,7 @@ export const Modal = ({ showModal, setShowModal }) => {
           <ModalWrapper showModal={showModal}>
             <ModalImg src={require('../../images/yellowstone.jpg').default} alt='camera' />
             <ModalContent>
-              <h1>Sign up here!</h1>
-              <p>Sign up for great emails!</p>
-              <button>Join Now!</button>
+              <Contact />
             </ModalContent>
             <CloseModalButton
                 aria-label='Close modal'
