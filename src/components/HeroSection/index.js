@@ -1,15 +1,35 @@
 import React, { useState } from 'react';
 import Video from '../../videos/video.mp4';
 import { HeroContainer, HeroBg, VideoBg, HeroP, HeroH1, HeroContent, HeroBtnWrapper, ArrowForward, ArrowRight } from './Hero'
-import { Button } from '../ButtonElement.js'
+import { Button } from '../ButtonElement.js';
+import './HeroSection.css'
+import { Modal } from '../../components/Modal/Modal.js'
+// import styled from 'styled-components';
+
+// const Button = styled.button`
+//   min-width: 100px;
+//   padding: 16px 32px;
+//   border-radius: 4px;
+//   border: none;
+//   background: #141414;
+//   color: #fff;
+//   font-size: 24px;
+//   cursor: pointer;
+// `;
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false)
+  const [showModal, setShowModal] = useState(false)
+
+  const openModal = () => {
+    setShowModal(prev => !prev)
+  }
 
   const onHover = () => {
     setHover(!hover)
   }
     return (
+      <>
         <HeroContainer id='home'>
           <HeroBg>
             <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
@@ -18,7 +38,8 @@ const HeroSection = () => {
             <HeroH1>Soar Counseling</HeroH1>
             <HeroP>Cody, Wyoming</HeroP>
             <HeroBtnWrapper>
-              <Button to='contact'
+              <Button
+              onClick={openModal}
               onMouseEnter={onHover}
               onMouseLeave={onHover}
               primary='true'
@@ -29,11 +50,13 @@ const HeroSection = () => {
               exact='true'
               offset={-80}
               >
-                Get in touch {hover ? <ArrowForward /> : <ArrowRight />}
+                Contact {hover ? <ArrowForward /> : <ArrowRight />}
               </Button>
             </HeroBtnWrapper>
+            <Modal showModal={showModal} setShowModal={setShowModal} />
           </HeroContent>
         </HeroContainer>
+        </>
     )
 }
 

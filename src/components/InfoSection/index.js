@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '../ButtonElement.js';
-// import styled from 'styled-components';
+// import { Modal } from '../Modal/Modal.js'
 
 import { InfoContainer, InfoWrapper, InfoRow, Column1, TextWrapper, TopLine, Heading, SubTitle, BtnWrap, Column2, ImgWrap, Img } from './Info.js';
 
