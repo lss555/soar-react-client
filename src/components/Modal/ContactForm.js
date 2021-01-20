@@ -3,7 +3,8 @@ import React from 'react';
 import './contactForm.css'
 // import { Button } from '../ButtonElement.js';
 
-export default function ContactUs() {
+export default function ContactUs({ closeModal }) {
+  // const [submitSuccess, setSubmitSuccess] = useState(false)
 
     function sendEmail(e) {
         e.preventDefault();
@@ -17,6 +18,8 @@ export default function ContactUs() {
         e.target.reset()
     }
 
+    // console.log(submitSuccess)
+
     return(
         <div>
             <div className="container">
@@ -29,11 +32,11 @@ export default function ContactUs() {
                         </div>
                         <p className='contact-text'>Email</p>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <input type="email" className="form-control" placeholder="" name="email"/>
+                            <input type="email" className="form-control" placeholder="" name="email" required/>
                         </div>
                         <p className='contact-text'>Message</p>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <textarea className="form-message" id="" cols="30" rows="8" placeholder="" name="message"></textarea>
+                            <textarea className="form-message" id="" cols="30" rows="8" placeholder="" name="message" required></textarea>
                         </div>
                         <div className="col-8 pt-3 mx-auto">
                             <input type="submit" className="btn btn-info send-btn" value="Send Message"></input>

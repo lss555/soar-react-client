@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { MdClose } from 'react-icons/md';
 import { useSpring, animated } from 'react-spring'
 import Contact from './ContactForm'
+import ThankYou from './ThankYouMessage'
 
 const Background = styled.div`
   width: 100%;
@@ -20,19 +21,26 @@ const ModalWrapper = styled.div`
   background: #fff;
   color: #000;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   position: relative;
   z-index: 10;
   border-radius: 10px;
   margin-bottom: 38rem;
+
+  @media screen and (max-width: 825px) {
+    width: 50vh;
+    flex-basis: auto;
+    margin: 0 auto;
+    margin-bottom: 38rem;
+  }
 `;
 
-const ModalImg = styled.img`
-  width: 100%;
-  height: 100%;
-  border-radius: 10px 0 0 10px;
-  background: #000;
-`;
+// const ModalImg = styled.img`
+//   width: 100%;
+//   height: 100%;
+//   border-radius: 10px 0 0 10px;
+//   background: #000;
+// `;
 
 const ModalContent = styled.div`
   display: flex;
@@ -63,7 +71,7 @@ const CloseModalButton = styled(MdClose)`
   z-index: 10;
 `;
 
-export const Modal = ({ showModal, setShowModal }) => {
+export const Modal = ({ showModal, setShowModal, submitSuccess }) => {
   const modalRef = useRef();
 
   const animation = useSpring({
@@ -97,9 +105,8 @@ export const Modal = ({ showModal, setShowModal }) => {
         <Background ref={modalRef} onClick={closeModal}>
         <animated.div style={animation}>
           <ModalWrapper showModal={showModal}>
-            <ModalImg src={require('../../images/yellowstone.jpg').default} alt='camera' />
             <ModalContent>
-              <Contact />
+              {submitSuccess ? <ThankYou /> : <Contact />}
             </ModalContent>
             <CloseModalButton
                 aria-label='Close modal'

@@ -4,6 +4,7 @@ import { HeroContainer, HeroBg, VideoBg, HeroP, HeroH1, HeroContent, HeroBtnWrap
 import { Button } from '../ButtonElement.js';
 import './HeroSection.css'
 import { Modal } from '../../components/Modal/Modal.js'
+// import Modal from 'react-modal';
 // import styled from 'styled-components';
 
 // const Button = styled.button`
@@ -39,6 +40,7 @@ const HeroSection = () => {
             <HeroP>Cody, Wyoming</HeroP>
             <HeroBtnWrapper>
               <Button
+              to='home'
               onClick={openModal}
               onMouseEnter={onHover}
               onMouseLeave={onHover}
