@@ -1,0 +1,32 @@
+h4 {
+  padding-bottom: 15px;
+}
+
+ul, ol {
+  padding: 15px 20px;
+}
+
+.home-btn {
+  max-width: 400px;
+  margin: 25px auto;
+}
+
+h1 {
+  padding: 20px 0;
+}
+
+p {
+  padding-bottom: 15px;
+}
+
+.faq-container {
+  padding: 15px;
+  background: #FCF3CF;
+  text-align: center;
+}
+
+li {
+  padding: 5px;
+  text-decoration: none;
+  list-style-type: none;
+}
