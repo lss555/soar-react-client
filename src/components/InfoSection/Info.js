@@ -95,6 +95,7 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
   width: 100%;
+  height: 100%;
   margin-top: 0;
   margin-right: 0;
   margin-left: 10px;
