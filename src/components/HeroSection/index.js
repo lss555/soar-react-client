@@ -18,7 +18,7 @@ import { Modal } from '../../components/Modal/Modal.js'
 //   cursor: pointer;
 // `;
 
-const HeroSection = () => {
+const HeroSection = ({ submitSuccess, setSubmitSuccess }) => {
   const [hover, setHover] = useState(false)
   const [showModal, setShowModal] = useState(false)
 
@@ -55,7 +55,7 @@ const HeroSection = () => {
                 Contact {hover ? <ArrowForward /> : <ArrowRight />}
               </Button>
             </HeroBtnWrapper>
-            <Modal showModal={showModal} setShowModal={setShowModal} />
+            <Modal submitSuccess={submitSuccess} setSubmitSuccess={setSubmitSuccess} showModal={showModal} setShowModal={setShowModal} />
           </HeroContent>
         </HeroContainer>
         </>

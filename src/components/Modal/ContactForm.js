@@ -1,17 +1,19 @@
 import emailjs from "emailjs-com";
-import React from 'react';
+import React, { useState } from 'react';
 import './contactForm.css'
 // import { Button } from '../ButtonElement.js';
 
 export default function ContactUs({ closeModal }) {
-  // const [submitSuccess, setSubmitSuccess] = useState(false)
+  const [submitSuccess, setSubmitSuccess] = useState(false)
 
     function sendEmail(e) {
         e.preventDefault();
 
     emailjs.sendForm('service_h7ocasz', 'template_9jtaijk', e.target, 'user_WiyfsTUJQi6oy6E5vtgvY')
         .then((result) => {
-            console.log(result.text);
+            setSubmitSuccess(true);
+            console.log(submitSuccess);
+            return submitSuccess;
         }, (error) => {
             console.log(error.text);
         });

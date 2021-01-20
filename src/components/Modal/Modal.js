@@ -1,9 +1,11 @@
-import React, { useRef, useCallback, useEffect } from 'react'
+import React, { useRef, useCallback, useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { MdClose } from 'react-icons/md';
-import { useSpring, animated } from 'react-spring'
-import Contact from './ContactForm'
-import ThankYou from './ThankYouMessage'
+import { useSpring, animated } from 'react-spring';
+import emailjs from "emailjs-com";
+import './contactForm.css';
+// import Contact from './ContactForm'
+// import ThankYou from './ThankYouMessage'
 
 const Background = styled.div`
   width: 100%;
@@ -71,7 +73,8 @@ const CloseModalButton = styled(MdClose)`
   z-index: 10;
 `;
 
-export const Modal = ({ showModal, setShowModal, submitSuccess }) => {
+export const Modal = ({ showModal, setShowModal }) => {
+  const [submitSuccess, setSubmitSuccess] = useState(false)
   const modalRef = useRef();
 
   const animation = useSpring({
@@ -85,12 +88,14 @@ export const Modal = ({ showModal, setShowModal, submitSuccess }) => {
   const closeModal = e => {
     if (modalRef.current === e.target) {
       setShowModal(false);
+      setSubmitSuccess(false);
     }
   };
 
   const keyPress = useCallback(e => {
     if (e.key === 'Escape' && showModal) {
-      setShowModal(false)
+      setShowModal(false);
+      setSubmitSuccess(false);
     }
   }, [setShowModal, showModal])
 
@@ -99,6 +104,25 @@ export const Modal = ({ showModal, setShowModal, submitSuccess }) => {
     return () => document.removeEventListener('keydown', keyPress)
   }, [keyPress])
 
+  function sendEmail(e) {
+      e.preventDefault();
+
+  emailjs.sendForm('service_h7ocasz', 'template_9jtaijk', e.target, 'user_WiyfsTUJQi6oy6E5vtgvY')
+      .then((result) => {
+          setSubmitSuccess(prev => !prev);
+          console.log(submitSuccess);
+          return submitSuccess;
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
+  }
+
+  function setFunction() {
+    setShowModal(prev => !prev)
+    setSubmitSuccess(prev => !prev)
+  }
+
   return (
     <>
       {showModal ? (
@@ -106,11 +130,36 @@ export const Modal = ({ showModal, setShowModal, submitSuccess }) => {
         <animated.div style={animation}>
           <ModalWrapper showModal={showModal}>
             <ModalContent>
-              {submitSuccess ? <ThankYou /> : <Contact />}
+              {submitSuccess ? <div className="ty-container">
+                <h1>Thank you for contacting Soar! We will get back to you as soon as possible.</h1>
+              </div> : <div>
+                  <div className="container">
+                  <h1>Contact</h1>
+                  <form onSubmit={sendEmail}>
+                          <div className="row pt-5 mx-auto">
+                          <p className='contact-text'>Name</p>
+                              <div className="col-8 form-group mx-auto">
+                                  <input type="text" className="form-control" placeholder="" name="from_name"/>
+                              </div>
+                              <p className='contact-text'>Email</p>
+                              <div className="col-8 form-group pt-2 mx-auto">
+                                  <input type="email" className="form-control" placeholder="" name="email" required/>
+                              </div>
+                              <p className='contact-text'>Message</p>
+                              <div className="col-8 form-group pt-2 mx-auto">
+                                  <textarea className="form-message" id="" cols="30" rows="8" placeholder="" name="message" required></textarea>
+                              </div>
+                              <div className="col-8 pt-3 mx-auto">
+                                  <input type="submit" className="btn btn-info send-btn" value="Send Message"></input>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>}
             </ModalContent>
             <CloseModalButton
                 aria-label='Close modal'
-                onClick={() => setShowModal(prev => !prev)}
+                onClick={() => setFunction()}
               />
           </ModalWrapper>
           </animated.div>

@@ -32,3 +32,12 @@
 .contact-text {
   padding-top: 10px;
 }
+
+.ty-container {
+  paddiing: 3rem;
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+}
