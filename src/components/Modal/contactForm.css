@@ -25,12 +25,12 @@
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: green;
+    background: #fff;
   }
 }
 
 .contact-text {
-  padding-top: 10px;
+  padding-top: -50px;
 }
 
 .ty-container {

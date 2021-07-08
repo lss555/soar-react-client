@@ -23,8 +23,8 @@ const Footer = () => {
                 </FooterLinkItems>
                 <FooterLinkItems>
                   <FooterLinkTitle>Links and Media</FooterLinkTitle>
-                    <FooterLink to='/sign-in'>Soar Facebook</FooterLink>
-                    <FooterLink to='/sign-in'>NAMI</FooterLink>
+                    <FooterLink to='https://www.facebook.com/SOAR-Counseling-Service-104003708022475/' target='_blank'>Soar Facebook</FooterLink>
+                    <FooterLink href='/'>NAMI</FooterLink>
                     <FooterLink to='/sign-in'>A Course In Miracles</FooterLink>
                     <FooterLink to='/sign-in'>Psychology Today</FooterLink>
                 </FooterLinkItems>
@@ -37,7 +37,7 @@ const Footer = () => {
                 </SocialLogo>
                   <WebsiteRights>Soar Counseling Services Inc. © {new Date().getFullYear()}</WebsiteRights>
                   <SocialIcons>
-                    <SocialIconLink href='/' target='_blank' aria-label='Facebook'><FaFacebook /></SocialIconLink>
+                    <SocialIconLink href='https://www.facebook.com/SOAR-Counseling-Service-104003708022475/' target='_blank' aria-label='Facebook'><FaFacebook /></SocialIconLink>
                   </SocialIcons>
               </SocialMediaWrap>
             </SocialMedia>
