@@ -82,7 +82,7 @@ export const NavLinks = styled(LinkS)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #bc986a;
+    border-bottom: 3px solid rgba(188, 152, 106, 1);
   }
 `;
 
