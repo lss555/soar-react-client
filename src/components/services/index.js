@@ -1,7 +1,7 @@
 import React from 'react';
-import Icon1 from '../../images/office.JPG';
-import Icon2 from '../../images/building.JPG';
-import Icon3 from '../../images/yellowstone.jpg';
+import Icon1 from '../../images/Cherijaelin2.jpg';
+import Icon2 from '../../images/Workplace1.jpg';
+import Icon3 from '../../images/Cheri.jpg';
 import {
   ServicesContainer,
   ServicesH1,
@@ -21,21 +21,21 @@ const Services = () => {
           <ServicesIcon src={Icon1} />
           <ServicesH2>Equine Therapy</ServicesH2>
           <ServicesP>
-            place holder information place holder information
+            Work with horses and heal.
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon2} />
           <ServicesH2>Group Therapy</ServicesH2>
           <ServicesP>
-            place holder information place holder information
+            Group therapy can show that you're not alone.
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon3} />
           <ServicesH2>individual Therapy</ServicesH2>
           <ServicesP>
-            place holder information place holder information
+            Most popular and a great place to start making change for you.
           </ServicesP>
         </ServicesCard>
       </ServicesWrapper>

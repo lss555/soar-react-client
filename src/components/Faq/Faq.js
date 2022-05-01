@@ -55,7 +55,7 @@ const Faq = ({ onHover, primary }) => {
             <li>If the therapist has reason to suspect the client is seriously in danger or harming him/herself or has threatened to harm another person.</li>
           </ol>
           <Button
-          to='/'
+          to='/home'
           className='home-btn'
           onMouseEnter={onHover}
           onMouseLeave={onHover}

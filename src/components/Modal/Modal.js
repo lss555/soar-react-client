@@ -14,6 +14,7 @@ const Background = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 1;
 `;
 
 const ModalWrapper = styled.div`
@@ -102,7 +103,9 @@ export const Modal = ({ showModal, setShowModal }) => {
 
   useEffect(() => {
     document.addEventListener('keydown', keyPress);
-    return () => document.removeEventListener('keydown', keyPress)
+    return () => {
+      document.removeEventListener('keydown', keyPress)
+    }
   }, [keyPress])
 
   function sendEmail(e) {
@@ -111,7 +114,6 @@ export const Modal = ({ showModal, setShowModal }) => {
   emailjs.sendForm('service_h7ocasz', 'template_9jtaijk', e.target, 'user_WiyfsTUJQi6oy6E5vtgvY')
       .then((result) => {
           setSubmitSuccess(prev => !prev);
-          console.log(submitSuccess);
           return submitSuccess;
       }, (error) => {
           console.log(error.text);
@@ -120,9 +122,9 @@ export const Modal = ({ showModal, setShowModal }) => {
   }
 
   function setFunction() {
-    setShowModal(prev => !prev)
-    setSubmitSuccess(prev => !prev)
-  }
+    setShowModal(prev => !prev);
+    setSubmitSuccess(false);
+  };
 
   return (
     <>

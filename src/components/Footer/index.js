@@ -24,7 +24,7 @@ const Footer = () => {
                 <FooterLinkItems>
                   <FooterLinkTitle>Links and Media</FooterLinkTitle>
                     <FooterLink to='https://www.facebook.com/SOAR-Counseling-Service-104003708022475/' target='_blank'>Soar Facebook</FooterLink>
-                    <FooterLink href='/'>NAMI</FooterLink>
+                    <FooterLink to='/'>NAMI</FooterLink>
                     <FooterLink to='/sign-in'>A Course In Miracles</FooterLink>
                     <FooterLink to='/sign-in'>Psychology Today</FooterLink>
                 </FooterLinkItems>
