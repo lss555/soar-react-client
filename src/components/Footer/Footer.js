@@ -6,7 +6,7 @@ export const FooterContainer = styled.footer`
 `;
 
 export const FooterWrap = styled.div`
-  padding: 48px 24px;
+  padding: 0 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,7 +36,7 @@ export const FooterLinkItems = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 128px;
+  margin: 0 128px;
   text-align: left;
   width: 160px;
   boz-sizing: border-box;
@@ -55,13 +55,13 @@ export const FooterLinkItems = styled.div`
 
 export const FooterLinkTitle = styled.h1`
   font-size: 14px;
-  margin-bottom: 16px;
+  margin-bottom: 5px;
 `;
 
 export const FooterLink = styled(Link)`
   color: #fff;
   text-decoration: none;
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
   font-size: 14px;
 
   &:hover {
@@ -83,7 +83,7 @@ export const SocialMediaWrap = styled.div`
   justify-content: space-between;
   align-items: center;
   max-width: 1100px;
-  margin: 40px auto 0 auto;
+  margin: 0 auto;
 
   @media screen and (max-width: 820px) {
     flex-direction: column;
@@ -98,7 +98,7 @@ export const SocialLogo = styled(Link)`
   font-size: 1.5rem;
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 0;
   font-weight: bold;
   @media screen and (min-width: 820px) {
     padding: 5rem;
@@ -107,7 +107,7 @@ export const SocialLogo = styled(Link)`
 
 export const WebsiteRights = styled.small`
   color: #fff;
-  margin-bottom: 16px;
+  margin: 12px 0;
   @media screen and (min-width: 820px) {
     padding: 5rem;
   }
