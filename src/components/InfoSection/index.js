@@ -4,7 +4,7 @@ import { Button } from '../ButtonElement.js';
 
 import { InfoContainer, InfoWrapper, InfoRow, Column1, TextWrapper, TopLine, Heading, SubTitle, BtnWrap, Column2, ImgWrap, Img } from './Info.js';
 
-const InfoSection = ({ lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt, primary, dark, dark2}) => {
+const InfoSection = ({ lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt, primary, dark, dark2, destination}) => {
     return (
         <>
           <InfoContainer lightBg={lightBg} id={id}>
@@ -17,6 +17,7 @@ const InfoSection = ({ lightBg, id, imgStart, topLine, lightText, headline, dark
                     <SubTitle darkText={darkText}>{description}</SubTitle>
                     <BtnWrap>
                     <Button
+                    
                     to='home'
                     smooth={true}
                     duration={500}

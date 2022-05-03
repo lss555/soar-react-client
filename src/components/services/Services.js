@@ -7,7 +7,7 @@ export const ServicesContainer = styled.div`
   justify-content: center;
   align-items: center;
   background: #189AC0;
-
+  z-index: 1;
   @media screen and (max-width: 768px) {
     height: 1100px;
   }
@@ -25,6 +25,7 @@ export const ServicesWrapper = styled.div`
   align-items: center;
   grid-gap: 16px;
   padding: 0 50px;
+  z-index: 1;
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
@@ -47,9 +48,10 @@ export const ServicesCard = styled.div`
   padding: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
+  transform: scale(1.05);
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.07);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
   }

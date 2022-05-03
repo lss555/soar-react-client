@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Icon1 from '../../images/Cherijaelin2.jpg';
 import Icon2 from '../../images/Workplace1.jpg';
 import Icon3 from '../../images/Cheri.jpg';
@@ -11,17 +11,58 @@ import {
   ServicesH2,
   ServicesP
 } from './Services';
+import InfoModal from '../info-modal/InfoModal.js'
+// import styled from 'styled-components'
+// import { Button } from '../ButtonElement.js';
+
+// const Container = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   align-items;
+//   height: 100vh;
+// `
+//
+// const Button = styled.button`
+//   min-width: 100px;
+//   padding: 16px 32px;
+//   border-radius: 4px;
+//   border: none;
+//   background: #141414;
+//   color: #fff;
+//   font-size: 24px;
+//   cursor: pointer;
+// `;
 
 const Services = () => {
+  const [showInfoModal, setShowInfoModal] = useState(false);
+  const [hover, setHover] = useState(false);
+
+  const openInfoModal = () => {
+    setShowInfoModal(prev => !prev);
+    console.log('clicked', showInfoModal)
+  };
+
+  const onHover = () => {
+    setHover(!hover)
+  }
+
+  // function setFunction() {
+  //   setShowInfoModal(true);
+  // };
+
   return (
     <ServicesContainer id='services'>
       <ServicesH1>Services</ServicesH1>
       <ServicesWrapper>
-        <ServicesCard>
+        <ServicesCard
+        onClick={openInfoModal}
+        onMouseEnter={onHover}
+        onMouseLeave={onHover}
+        >
           <ServicesIcon src={Icon1} />
           <ServicesH2>Equine Therapy</ServicesH2>
           <ServicesP>
-            Work with horses and heal.
+            Work with horses
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
@@ -30,6 +71,7 @@ const Services = () => {
           <ServicesP>
             Group therapy can show that you're not alone.
           </ServicesP>
+          <InfoModal showInfoModal={showInfoModal} setShowInfoModal={setShowInfoModal}/>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon3} />

@@ -1,3 +1,5 @@
+// import { InfoModal } from '../info-modal/InfoModal.js';
+
 export const homeObjOne = {
   id: 'about',
   lightBg: false,

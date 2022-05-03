@@ -1,11 +1,9 @@
 import React, { useRef, useCallback, useEffect, useState } from 'react'
 import styled from 'styled-components'
-import { MdClose } from 'react-icons/md';
-import { useSpring, animated } from 'react-spring';
-import emailjs from "emailjs-com";
-import './contactForm.css';
-// import Contact from './ContactForm'
-// import ThankYou from './ThankYouMessage'
+import { MdClose } from 'react-icons/md'
+import { useSpring, animated } from 'react-spring'
+import emailjs from "emailjs-com"
+import './contactForm.css'
 
 const Background = styled.div`
   width: 100%;
@@ -30,6 +28,8 @@ const ModalWrapper = styled.div`
   z-index: 10;
   border-radius: 10px;
   margin-bottom: 38rem;
+  opacity: 1;
+  white-space: normal;
 
   @media screen and (max-width: 825px) {
     width: 50vh;
@@ -38,13 +38,6 @@ const ModalWrapper = styled.div`
     margin-bottom: 38rem;
   }
 `;
-
-// const ModalImg = styled.img`
-//   width: 100%;
-//   height: 100%;
-//   border-radius: 10px 0 0 10px;
-//   background: #000;
-// `;
 
 const ModalContent = styled.div`
   display: flex;
