@@ -28,12 +28,24 @@ const ModalWrapper = styled.div`
   position: relative;
   z-index: 10;
   border-radius: 10px;
-  margin-bottom: 38rem;
+  margin-bottom: 35rem;
   opacity: 1;
   white-space: normal;
 
   @media screen and (max-width: 825px) {
     width: 50vh;
+    flex-basis: auto;
+    margin: 0 auto;
+    margin-bottom: 38rem;
+  }
+  @media screen and (max-width: 450px) {
+    width: 35vh;
+    flex-basis: auto;
+    margin: 0 auto;
+    margin-bottom: 38rem;
+  }
+  @media screen and (max-width: 315px) {
+    width: 25vh;
     flex-basis: auto;
     margin: 0 auto;
     margin-bottom: 38rem;

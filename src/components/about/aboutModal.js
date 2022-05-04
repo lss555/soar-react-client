@@ -42,6 +42,18 @@ const ModalWrapper = styled.div`
     margin: 0 auto;
     margin-bottom: 38rem;
   }
+  @media screen and (max-width: 450px) {
+    width: 35vh;
+    flex-basis: auto;
+    margin: 0 auto;
+    margin-bottom: 38rem;
+  }
+  @media screen and (max-width: 315px) {
+    width: 25vh;
+    flex-basis: auto;
+    margin: 0 auto;
+    margin-bottom: 38rem;
+  }
 `;
 
 const ModalContent = styled.div`

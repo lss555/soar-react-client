@@ -51,7 +51,6 @@ const AboutSection = ({ lightBg, id, imgStart, topLine, lightText, headline, dar
 
   const openModal = () => {
     setShowModal(prev => !prev)
-    console.log('open modal', showModal)
   }
 
   const onHover = () => {
