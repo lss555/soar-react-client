@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { MdClose } from 'react-icons/md'
 import { useSpring, animated } from 'react-spring'
 import emailjs from "emailjs-com"
-import './contactForm.css'
+import './aboutModal.css'
 
 const Background = styled.div`
   width: 100%;
@@ -13,6 +13,10 @@ const Background = styled.div`
   justify-content: center;
   align-items: center;
   opacity: 1;
+  bottom: 1rem;
+  top: 20rem;
+  right: 0.5rem;
+  left: 0.5rem;
   z-index: 20;
 `;
 
@@ -69,7 +73,7 @@ const CloseModalButton = styled(MdClose)`
   z-index: 10;
 `;
 
-export const Modal = ({ showModal, setShowModal }) => {
+export const AboutModal = ({ showModal, setShowModal }) => {
   const [submitSuccess, setSubmitSuccess] = useState(false)
   const modalRef = useRef();
 

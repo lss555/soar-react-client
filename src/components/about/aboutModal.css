@@ -1,0 +1,48 @@
+.form-group {
+  padding-top: -10px;
+  margin-top: -15px;
+}
+
+.form-control {
+  height: 30px;
+}
+
+.send-btn {
+  border-radius: 50px;
+  background: #FCF3CF;
+  white-space: nowrap;
+  padding: 14px 48px;
+  color: #010606;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  margin: 15px auto;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+  }
+}
+
+.contact-text {
+  padding-top: -50px;
+  width: 80%;
+}
+
+.ty-container {
+  paddiing: 3rem;
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+}
+
+.container {
+  white-space: normal;
+}

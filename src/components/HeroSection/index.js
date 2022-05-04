@@ -1,22 +1,9 @@
-import React, { useState } from 'react';
-import Video from '../../videos/video.mp4';
+import React, { useState } from 'react'
+import Video from '../../videos/video.mp4'
 import { HeroContainer, HeroBg, VideoBg, HeroP, HeroH1, HeroContent, HeroBtnWrapper, ArrowForward, ArrowRight } from './Hero'
-import { Button } from '../ButtonElement.js';
+import { Button } from '../ButtonElement.js'
 import './HeroSection.css'
-import { Modal } from '../../components/Modal/Modal.js'
-// import Modal from 'react-modal';
-// import styled from 'styled-components';
-
-// const Button = styled.button`
-//   min-width: 100px;
-//   padding: 16px 32px;
-//   border-radius: 4px;
-//   border: none;
-//   background: #141414;
-//   color: #fff;
-//   font-size: 24px;
-//   cursor: pointer;
-// `;
+import { Modal } from '../../components/Modal/Modal.js';
 
 const HeroSection = ({ submitSuccess, setSubmitSuccess }) => {
   const [hover, setHover] = useState(false)
