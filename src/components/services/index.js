@@ -52,6 +52,7 @@ const Services = () => {
           <ServicesP>
             Group therapy can show that you're not alone.
           </ServicesP>
+          <InfoModal showInfoModal={showInfoModal} setShowInfoModal={setShowInfoModal} />
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon3} />
@@ -59,7 +60,6 @@ const Services = () => {
           <ServicesP>
             Most popular and a great place to start making change for you.
           </ServicesP>
-          <InfoModal showInfoModal={showInfoModal} setShowInfoModal={setShowInfoModal}/>
         </ServicesCard>
       </ServicesWrapper>
     </ServicesContainer>

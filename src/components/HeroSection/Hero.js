@@ -9,7 +9,7 @@ export const HeroContainer = styled.div`
   padding: 0 30px;
   height: 800px;
   position: relative;
-  z-index: 1;
+  z-index: 10;
 
   :before {
     content: '';

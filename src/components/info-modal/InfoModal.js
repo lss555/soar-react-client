@@ -12,7 +12,7 @@ const Background = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 10;
-  right: 100%;
+  
   @media screen and (max-width: 1000px) {
     position: fixed;
     right: 50%;

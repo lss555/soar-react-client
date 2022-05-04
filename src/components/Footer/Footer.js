@@ -13,6 +13,7 @@ export const FooterWrap = styled.div`
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
+  padding-top: 20px;
 `;
 
 export const FooterLinksContainer = styled.div`
