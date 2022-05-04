@@ -49,11 +49,9 @@ export const ServicesCard = styled.div`
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
   transform: scale(1.05);
-
+  z-index: 1;
   &:hover {
-    transform: scale(1.07);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
+
   }
 `;
 

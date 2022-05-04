@@ -11,27 +11,8 @@ import {
   ServicesH2,
   ServicesP
 } from './Services';
-import InfoModal from '../info-modal/InfoModal.js'
-// import styled from 'styled-components'
-// import { Button } from '../ButtonElement.js';
-
-// const Container = styled.div`
-//   display: flex;
-//   justify-content: center;
-//   align-items;
-//   height: 100vh;
-// `
-//
-// const Button = styled.button`
-//   min-width: 100px;
-//   padding: 16px 32px;
-//   border-radius: 4px;
-//   border: none;
-//   background: #141414;
-//   color: #fff;
-//   font-size: 24px;
-//   cursor: pointer;
-// `;
+import InfoModal from '../info-modal/InfoModal.js';
+// import styled from 'styled-components';
 
 const Services = () => {
   const [showInfoModal, setShowInfoModal] = useState(false);
@@ -71,7 +52,6 @@ const Services = () => {
           <ServicesP>
             Group therapy can show that you're not alone.
           </ServicesP>
-          <InfoModal showInfoModal={showInfoModal} setShowInfoModal={setShowInfoModal}/>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon3} />
@@ -79,6 +59,7 @@ const Services = () => {
           <ServicesP>
             Most popular and a great place to start making change for you.
           </ServicesP>
+          <InfoModal showInfoModal={showInfoModal} setShowInfoModal={setShowInfoModal}/>
         </ServicesCard>
       </ServicesWrapper>
     </ServicesContainer>
