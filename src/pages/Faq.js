@@ -1,6 +1,6 @@
 
 import Footer from '../components/Footer';
-import NavBar from '../components/NavBar';
+import OuterNavBar from '../components/faq-info/outer-navbar.js';
 import SideBar from '../components/SideBar';
 import React, { useState } from 'react';
 import FaqPage from '../components/faq-info/faq-info.js';
@@ -14,7 +14,7 @@ const Faq = () => {
     return (
         <>
           <SideBar isOpen={isOpen} toggle={toggle}/>
-          <NavBar toggle={toggle}/>
+          <OuterNavBar toggle={toggle}/>
           <FaqPage />
           <Footer />
         </>
