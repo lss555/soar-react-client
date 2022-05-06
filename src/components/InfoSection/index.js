@@ -24,7 +24,7 @@ const Button = styled.div`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: ${({primary}) => (primary ? '#bc986a' : '#bc986a')};
-    border: 1px solid black;
+    background-color: #189AC0;
   }
 `;
 
@@ -48,11 +48,6 @@ const InfoSection = ({ lightBg, id, imgStart, topLine, lightText, headline, dark
                     <Button
                     to='/cq'
                     onClick={toggleHome}
-                    smooth="true"
-                    duration={500}
-                    spy="true"
-                    exact='true'
-                    offset={-80}
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}

@@ -1,6 +1,6 @@
 import Footer from '../components/Footer';
 import OuterNavBar from '../components/faq-info/outer-navbar.js';
-import SideBar from '../components/SideBar';
+import OuterSideBar from '../components/faq-info/outer-sidebar.js';
 import React, { useState } from 'react';
 import ServiceInfo from '../components/services-info/services-info.js';
 
@@ -12,7 +12,7 @@ const Service = () => {
 
     return (
         <>
-          <SideBar isOpen={isOpen} toggle={toggle}/>
+          <OuterSideBar isOpen={isOpen} toggle={toggle}/>
           <OuterNavBar toggle={toggle}/>
           <ServiceInfo />
           <Footer />

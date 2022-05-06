@@ -23,7 +23,7 @@ export const homeObjTwo = {
   lightText: false,
   lightTextDesc: false,
   topLine:'Frequently Asked questions',
-  headline: 'Common questions that many ask themselves when reaching out for help.',
+  headline: 'Do I really need therapy? Why do people go to therapy and how do I know if it is right for me? What is therapy like? Click below to find answers to common questions.',
   description: '',
   buttonLabel: 'FAQ page',
   imgStart: true,

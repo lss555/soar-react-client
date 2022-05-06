@@ -41,7 +41,7 @@ const Services = () => {
           <ServicesIcon src={Icon1} />
           <ServicesH2>Equine Therapy</ServicesH2>
           <ServicesP>
-            Work with horses
+            Work with horses. Click here to explore equine therapy
           </ServicesP>
         </ServicesCard>
         <ServicesCard
@@ -53,7 +53,7 @@ const Services = () => {
           <ServicesIcon src={Icon2} />
           <ServicesH2>Group Therapy</ServicesH2>
           <ServicesP>
-            Group therapy can show that you're not alone.
+            Group therapy can show that you're not alone. Click here to explore group therapy
           </ServicesP>
         </ServicesCard>
         <ServicesCard
@@ -65,7 +65,7 @@ const Services = () => {
           <ServicesIcon src={Icon3} />
           <ServicesH2>individual Therapy</ServicesH2>
           <ServicesP>
-            Most popular and a great place to start making change for you.
+            Most popular and a great place to start making change for you. Click here to explore individual therapy
           </ServicesP>
         </ServicesCard>
       </ServicesWrapper>

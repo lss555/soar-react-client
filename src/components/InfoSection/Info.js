@@ -65,7 +65,7 @@ export const TopLine = styled.p`
 
 export const Heading = styled.h1`
   margin-bottom: 24px;
-  font-size: 48px;
+  font-size: 36px;
   line-height: 1.1;
   font-weight: 600;
   color: ${({lightText}) => (lightText ? '#f7f8fa' : '#010606')};
@@ -91,7 +91,8 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
   max-width: 555px;
   height: 100%;
-  @media screen and (max-width: 770px) and (min-width: 480px) {
+  transform: translate(0px, 0px);
+  @media screen and (max-width: 770px) {
     height: auto;
     width: 60%;
     display: flex;
