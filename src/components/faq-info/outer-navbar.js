@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link as LinkR } from 'react-router-dom';
-import { Link as LinkS } from 'react-scroll';
+// import { Link as LinkS } from 'react-scroll';
 import React, { useState, useEffect } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib';
@@ -76,7 +76,7 @@ const OuterNavItem = styled.li`
   height: 80px;
 `;
 
-const OuterNavLinks = styled(LinkS)`
+const OuterNavLinks = styled(LinkR)`
   color: #010606;
   display: flex;
   align-items: center;
@@ -171,28 +171,26 @@ const OuterNavBar = ({ toggle }) => {
                 </MobileIcon>
                 <OuterNavMenu>
                   <OuterNavItem>
-                    <OuterNavLinks to='about'
-                    smooth={true}
+                    <OuterNavLinks to='/'
+
                     duration={500}
-                    spy={true}
+                    onClick={toggleHome}
                     exact='true'
                     offset={-80}
-                    >About</OuterNavLinks>
+                    >Home</OuterNavLinks>
                   </OuterNavItem>
                   <OuterNavItem>
-                    <OuterNavLinks to='faq'
-                    smooth={true}
+                    <OuterNavLinks to='/cq'
+                    onClick={toggleHome}
                     duration={500}
-                    spy={true}
                     exact='true'
                     offset={-80}
                     >FAQ</OuterNavLinks>
                   </OuterNavItem>
                   <OuterNavItem>
-                    <OuterNavLinks to='services'
-                    smooth={true}
+                    <OuterNavLinks to='/service'
+                    onClick={toggleHome}
                     duration={500}
-                    spy={true}
                     exact='true'
                     offset={-80}
                     >Services</OuterNavLinks>

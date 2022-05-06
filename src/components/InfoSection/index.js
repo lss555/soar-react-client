@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import styled from 'styled-components';
 import { InfoContainer, InfoWrapper, InfoRow, Column1, TextWrapper, TopLine, Heading, SubTitle, BtnWrap, Column2, ImgWrap, Img } from './Info.js';
 import './faq-home.css'
+import { animateScroll as scroll } from 'react-scroll'
 
 const Button = styled.div`
   border-radius: 3px;
@@ -27,6 +28,10 @@ const Button = styled.div`
   }
 `;
 
+const toggleHome = () => {
+  scroll.scrollToTop();
+}
+
 const InfoSection = ({ lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt, primary, dark, dark2, destination}) => {
     return (
         <>
@@ -42,6 +47,7 @@ const InfoSection = ({ lightBg, id, imgStart, topLine, lightText, headline, dark
                     <Link to='/cq' className='faq-link'>
                     <Button
                     to='/cq'
+                    onClick={toggleHome}
                     smooth="true"
                     duration={500}
                     spy="true"

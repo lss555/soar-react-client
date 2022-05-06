@@ -11,34 +11,32 @@ import {
   ServicesH2,
   ServicesP
 } from './Services';
-import InfoModal from '../info-modal/InfoModal.js';
+import { animateScroll as scroll } from 'react-scroll'
 // import styled from 'styled-components';
 
 const Services = () => {
-  const [showInfoModal, setShowInfoModal] = useState(false);
   const [hover, setHover] = useState(false);
-
-  const openInfoModal = () => {
-    setShowInfoModal(prev => !prev);
-    console.log('clicked', showInfoModal)
-  };
-
   const onHover = () => {
     setHover(!hover)
-  }
+  };
 
   // function setFunction() {
   //   setShowInfoModal(true);
   // };
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  }
 
   return (
     <ServicesContainer id='services'>
       <ServicesH1>Services</ServicesH1>
       <ServicesWrapper>
         <ServicesCard
-        onClick={openInfoModal}
+        to='/service'
         onMouseEnter={onHover}
         onMouseLeave={onHover}
+        onClick={toggleHome}
         >
           <ServicesIcon src={Icon1} />
           <ServicesH2>Equine Therapy</ServicesH2>
@@ -46,15 +44,24 @@ const Services = () => {
             Work with horses
           </ServicesP>
         </ServicesCard>
-        <ServicesCard>
+        <ServicesCard
+        to='/service'
+        onMouseEnter={onHover}
+        onMouseLeave={onHover}
+        onClick={toggleHome}
+        >
           <ServicesIcon src={Icon2} />
           <ServicesH2>Group Therapy</ServicesH2>
           <ServicesP>
             Group therapy can show that you're not alone.
           </ServicesP>
-          <InfoModal showInfoModal={showInfoModal} setShowInfoModal={setShowInfoModal} />
         </ServicesCard>
-        <ServicesCard>
+        <ServicesCard
+        to='/service'
+        onMouseEnter={onHover}
+        onMouseLeave={onHover}
+        onClick={toggleHome}
+        >
           <ServicesIcon src={Icon3} />
           <ServicesH2>individual Therapy</ServicesH2>
           <ServicesP>
