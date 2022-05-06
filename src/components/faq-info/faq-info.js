@@ -35,6 +35,9 @@ const Spacer = styled.div`
 
 
 const FaqPage = () => {
+
+
+
   return (
     <Container>
       <Header>Common Questions</Header>

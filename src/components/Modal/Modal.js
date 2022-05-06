@@ -13,7 +13,7 @@ const Background = styled.div`
   justify-content: center;
   align-items: center;
   opacity: 1;
-  z-index: 10;
+  z-index: 11;
 `;
 
 const ModalWrapper = styled.div`
@@ -26,7 +26,7 @@ const ModalWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   position: relative;
-  z-index: 10;
+  z-index: 11;
   border-radius: 10px;
   margin-bottom: 35rem;
   opacity: 1;
@@ -78,7 +78,7 @@ const CloseModalButton = styled(MdClose)`
   width: 32px;
   height: 32px;
   padding: 0;
-  z-index: 10;
+  z-index: 11;
 `;
 
 export const Modal = ({ showModal, setShowModal }) => {

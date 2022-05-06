@@ -122,6 +122,7 @@ const OuterNavLinks = styled(LinkS)`
 const OuterNavBar = ({ toggle }) => {
     const [scrollOuterNav, setScrollOuterNav] = useState(false)
 
+
     const changeOuterNav = () => {
       if(window.scrollY > 80) {
         setScrollOuterNav(true)
@@ -130,8 +131,27 @@ const OuterNavBar = ({ toggle }) => {
       }
     }
 
+//     useEffect(() => {
+//     // set our variable to true
+//     let cleanUpFunc = true;
+//     .then((response) => {
+//         if (cleanUpFunc) {
+//             // handle success
+//         }
+//     });
+//     return () => {
+//         // cancel the subscription
+//         cleanUpFunc = false;
+//     };
+// }, []);
+
     useEffect(() => {
+
       window.addEventListener('scroll', changeOuterNav)
+
+      return () => {
+        window.removeEventListener('scroll', changeOuterNav)
+      }
     }, [])
 
     const toggleHome = () => {
