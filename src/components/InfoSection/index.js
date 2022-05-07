@@ -26,6 +26,7 @@ const Button = styled.div`
     background: ${({primary}) => (primary ? '#bc986a' : '#bc986a')};
     background-color: #189AC0;
   }
+  
 `;
 
 const toggleHome = () => {
