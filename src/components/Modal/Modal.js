@@ -1,9 +1,9 @@
-import React, { useRef, useCallback, useEffect, useState } from 'react'
-import styled from 'styled-components'
-import { MdClose } from 'react-icons/md'
-import { useSpring, animated } from 'react-spring'
-import emailjs from "emailjs-com"
-import './contactForm.css'
+import React, { useRef, useCallback, useEffect, useState } from 'react';
+import styled from 'styled-components';
+import { MdClose } from 'react-icons/md';
+import { useSpring, animated } from 'react-spring';
+import emailjs from "emailjs-com";
+import './contactForm.css';
 
 const Background = styled.div`
   width: 100%;

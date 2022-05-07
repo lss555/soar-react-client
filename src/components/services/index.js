@@ -38,10 +38,10 @@ const Services = () => {
         onMouseLeave={onHover}
         onClick={toggleHome}
         >
-          <ServicesIcon src={Icon1} />
-          <ServicesH2>Equine Therapy</ServicesH2>
+          <ServicesIcon src={Icon3} />
+          <ServicesH2>individual Therapy</ServicesH2>
           <ServicesP>
-            Work with horses. Click here to explore equine therapy
+            Most popular and a great place to start making change for you. Click here to explore individual therapy
           </ServicesP>
         </ServicesCard>
         <ServicesCard
@@ -62,10 +62,10 @@ const Services = () => {
         onMouseLeave={onHover}
         onClick={toggleHome}
         >
-          <ServicesIcon src={Icon3} />
-          <ServicesH2>individual Therapy</ServicesH2>
+          <ServicesIcon src={Icon1} />
+          <ServicesH2>Equine Therapy</ServicesH2>
           <ServicesP>
-            Most popular and a great place to start making change for you. Click here to explore individual therapy
+            Work with horses. Click here to explore equine therapy
           </ServicesP>
         </ServicesCard>
       </ServicesWrapper>
