@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Icon1 from '../../images/Cherijaelin2.jpg';
 import Icon2 from '../../images/Workplace1.jpg';
-import Icon3 from '../../images/Cheri.jpg';
+import Icon3 from '../../images/Workplace5.jpg';
 import {
   ServicesContainer,
   ServicesH1,
@@ -51,9 +51,9 @@ const Services = () => {
         onClick={toggleHome}
         >
           <ServicesIcon src={Icon2} />
-          <ServicesH2>Group Therapy</ServicesH2>
+          <ServicesH2>Couples Therapy</ServicesH2>
           <ServicesP>
-            Group therapy can show that you're not alone. Click here to explore group therapy
+            Couple therapy can show that you're not alone. Click here to explore group therapy
           </ServicesP>
         </ServicesCard>
         <ServicesCard

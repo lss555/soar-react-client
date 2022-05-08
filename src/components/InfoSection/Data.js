@@ -27,7 +27,7 @@ export const homeObjTwo = {
   description: '',
   buttonLabel: 'FAQ page',
   imgStart: true,
-  img: require('../../images/AnnieHorse1.jpg').default,
+  img: require('../../images/Workplace4.jpg').default,
   alt: 'profile image',
   dark: true,
   primary: true,

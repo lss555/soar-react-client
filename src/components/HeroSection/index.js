@@ -23,7 +23,7 @@ const HeroSection = ({ submitSuccess, setSubmitSuccess }) => {
             <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
           </HeroBg>
           <HeroContent>
-            <HeroH1>Soar Counseling</HeroH1>
+            <HeroH1>Soar Counseling Services Inc.</HeroH1>
             <HeroP>Cody, Wyoming</HeroP>
             <HeroBtnWrapper>
               <Button

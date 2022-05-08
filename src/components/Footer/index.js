@@ -27,6 +27,7 @@ const Footer = () => {
                     <FooterLink href='https://nami.org/Home' target='_blank'>NAMI</FooterLink>
                     <FooterLink href='https://acim.org/' target='_blank'>A Course In Miracles</FooterLink>
                     <FooterLink href='https://www.psychologytoday.com/us' target='_blank' >Psychology Today</FooterLink>
+                    <FooterLink href='https://www.hearttoheartwy.org/' target='_blank' >Heart to Heart WY</FooterLink>
                 </FooterLinkItems>
               </FooterLinksWrapper>
             </FooterLinksContainer>
