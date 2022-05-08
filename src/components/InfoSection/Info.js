@@ -96,13 +96,7 @@ export const ImgWrap = styled.div`
   height: 100%;
   transform: translate(0px, 0px);
   @media screen and (max-width: 770px) {
-    height: auto;
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    padding-bottom: 7rem;
+    
   }
 `;
 
