@@ -147,7 +147,7 @@ export const AboutModal = ({ showModal, setShowModal }) => {
                 <h1>Thank you for contacting Soar! We will get back to you as soon as possible.</h1>
               </div> : <div>
                   <div className="container">
-                  <h1>Contact</h1>
+                  <h1 className='contact-text'>Contact</h1>
                   <form onSubmit={sendEmail}>
                           <div className="row pt-5 mx-auto">
                           <p className='contact-text'>Name</p>
