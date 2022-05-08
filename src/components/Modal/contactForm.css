@@ -1,6 +1,11 @@
 .form-group {
   padding-top: -10px;
   margin-top: -15px;
+
+  @media screen and (min-width: 450px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 .form-control {
@@ -32,6 +37,10 @@
 .contact-text {
   padding-top: -50px;
   width: 80%;
+  @media screen and (min-width: 450px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 .ty-container {
