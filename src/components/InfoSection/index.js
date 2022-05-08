@@ -26,14 +26,14 @@ const Button = styled.div`
     background: ${({primary}) => (primary ? '#bc986a' : '#bc986a')};
     background-color: #189AC0;
   }
-  
+
 `;
 
 const toggleHome = () => {
   scroll.scrollToTop();
 }
 
-const InfoSection = ({ lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt, primary, dark, dark2, destination}) => {
+const InfoSection = ({ lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt, primary, dark, dark2, destination, description2}) => {
     return (
         <>
           <InfoContainer lightBg={lightBg} id={id}>
@@ -44,15 +44,16 @@ const InfoSection = ({ lightBg, id, imgStart, topLine, lightText, headline, dark
                     <TopLine>{topLine}</TopLine>
                     <Heading lightText={lightText}>{headline}</Heading>
                     <SubTitle darkText={darkText}>{description}</SubTitle>
+                    <SubTitle darkText={darkText}>{description2}</SubTitle>
                     <BtnWrap>
                     <Link to='/cq' className='faq-link'>
-                    <Button
+                    {buttonLabel ? <Button
                     to='/cq'
                     onClick={toggleHome}
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}
-                    >{buttonLabel}</Button>
+                    >{buttonLabel}</Button> : null}
                     </Link>
                     </BtnWrap>
                   </TextWrapper>

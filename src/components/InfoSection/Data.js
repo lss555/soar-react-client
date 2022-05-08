@@ -1,20 +1,22 @@
 
 
-export const homeObjOne = {
-  id: 'about',
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
-  topLine:'Cheri Kreitzmann, MS, LPC',
-  headline: 'About Soar',
-  description: 'Soar Counseling Services started in Shell Lake WI in 2003. After working in administration for several years Cheri wanted to work in direct service with individuals struggling with mental health issues.  After realizing a shortage in outpatient mental health facilities Soar was born and quickly after became incorperrated as a wisconsin state liscensed outpatient clinic for substance abuse and mental health services. Cheri is now the director and active therapist at soar counseling services with 29 years of experience.',
-  buttonLabel: 'Send me a message',
-  imgStart: false,
-  img: require('../../images/profile.jpg').default,
+export const homeObjFour = {
+  id: 'welcome',
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine:'',
+  headline: 'Welcome,',
+  description: "Today you are one step closer to a new you where you feel empowered and on a positive and healthy path to growth and well-being. ",
+  description2: "As a solution-focused therapist, my goal is to help you uncover your true potential and lead a life that is worth celebrating not just surviving.  While we can't change difficult situations of the past, we can work together to better understand and resolve challenges in your life.  By applying complementary therapy approaches and techniques, we will unearth long-standing behavior patterns or negative perceptions that may be holding you back from experiencing a more fulfilling and meaningful life.",
+  buttonLabel: '',
+  imgStart: true,
+  img: require('../../images/building.JPG').default,
   alt: 'profile image',
   dark: true,
   primary: true,
-  darkText: false
+  darkText: true,
+  destination: '/service'
 }
 
 export const homeObjTwo = {
