@@ -13,8 +13,7 @@ const Background = styled.div`
   justify-content: center;
   align-items: center;
   opacity: 1;
-  z-index: 10000;
-  position: fixed;
+  z-index: 1000;
 `;
 
 const ModalWrapper = styled.div`
