@@ -1,6 +1,8 @@
 .form-group {
   padding-top: -10px;
   margin-top: -15px;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .form-control {
@@ -32,6 +34,8 @@
 .contact-text {
   padding-top: -50px;
   width: 80%;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .ty-container {
@@ -51,4 +55,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-wrap: anywhere;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
