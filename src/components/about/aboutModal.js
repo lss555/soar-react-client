@@ -165,6 +165,9 @@ export const AboutModal = ({ showModal, setShowModal }) => {
                               <div className="col-8 pt-3 mx-auto">
                                   <input type="submit" className="btn btn-info send-btn" value="Send Message"></input>
                               </div>
+                              <div>
+                                <p className='fax'>You can also fax us at 307-224-6634</p>
+                              </div>
                           </div>
                       </form>
                   </div>

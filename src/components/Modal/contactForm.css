@@ -46,3 +46,9 @@
 .container {
   white-space: normal;
 }
+
+.fax {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
