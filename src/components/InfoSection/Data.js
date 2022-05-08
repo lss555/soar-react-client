@@ -11,7 +11,7 @@ export const homeObjFour = {
   description2: "As a solution-focused therapist, my goal is to help you uncover your true potential and lead a life that is worth celebrating not just surviving.  While we can't change difficult situations of the past, we can work together to better understand and resolve challenges in your life.  By applying complementary therapy approaches and techniques, we will unearth long-standing behavior patterns or negative perceptions that may be holding you back from experiencing a more fulfilling and meaningful life.",
   buttonLabel: '',
   imgStart: true,
-  img: require('../../images/building.JPG').default,
+  img: require('../../images/Workplace1.jpg').default,
   alt: 'profile image',
   dark: true,
   primary: true,
