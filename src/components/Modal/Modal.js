@@ -14,6 +14,7 @@ const Background = styled.div`
   align-items: center;
   opacity: 1;
   z-index: 10000;
+  position: fixed;
 `;
 
 const ModalWrapper = styled.div`

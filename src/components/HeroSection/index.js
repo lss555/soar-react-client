@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Video from '../../videos/video.mp4'
+import Sunset from '../../images/moonmtn.jpg'
 import { HeroContainer, HeroBg, VideoBg, HeroP, HeroH1, HeroContent, HeroBtnWrapper, ArrowForward, ArrowRight } from './Hero'
 import { Button } from '../ButtonElement.js'
 import './HeroSection.css'
@@ -20,7 +20,7 @@ const HeroSection = ({ submitSuccess, setSubmitSuccess }) => {
       <>
         <HeroContainer id='home'>
           <HeroBg>
-            <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
+            <VideoBg src={Sunset} />
           </HeroBg>
           <HeroContent>
             <HeroH1>Soar Counseling Services Inc.</HeroH1>
