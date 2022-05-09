@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Icon1 from '../../images/Cherijaelin2.jpg';
 import Icon2 from '../../images/office.JPG';
-import Icon3 from '../../images/Workplace5.jpg';
+import Icon3 from '../../images/Cheri2.jpg';
 import {
   ServicesContainer,
   ServicesH1,
@@ -41,7 +41,7 @@ const Services = () => {
           <ServicesIcon src={Icon3} />
           <ServicesH2>individual Therapy</ServicesH2>
           <ServicesP>
-            Most popular and a great place to start making change for you. Click here to explore individual therapy
+            Most popular and a great place to start making change for you. Click here to explore individual therapy!
           </ServicesP>
         </ServicesCard>
         <ServicesCard
@@ -53,7 +53,7 @@ const Services = () => {
           <ServicesIcon src={Icon2} />
           <ServicesH2>Couples Therapy</ServicesH2>
           <ServicesP>
-            Couple therapy can show that you're not alone. Click here to explore group therapy
+            Couples therapy can help you and your significant other grow. Click here to explore couples therapy!
           </ServicesP>
         </ServicesCard>
         <ServicesCard
@@ -65,7 +65,7 @@ const Services = () => {
           <ServicesIcon src={Icon1} />
           <ServicesH2>Equine Therapy</ServicesH2>
           <ServicesP>
-            Work with horses. Click here to explore equine therapy
+            Learn to heal and grow while working with horses. Click here to explore equine therapy!
           </ServicesP>
         </ServicesCard>
       </ServicesWrapper>
