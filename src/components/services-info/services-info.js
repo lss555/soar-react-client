@@ -57,6 +57,14 @@ const ServiceInfo = () => {
 
         <Paragraph>We can learn so much from horses and animals to include trust, boundaries, communication, and unconditional love. These are things that sometimes can not be taught but only experiences</Paragraph>
       </Spacer>
+
+      <Spacer>
+        <H3 id='equine'>Cost and payment options</H3>
+
+        <Paragraph>Types of counseling techniques used in therapy sessions include, cognitive behavioral, mindfulness, client centered, solution focused, and dialectical behavioral therapy.  Therapy sessions last 1 hour to 1.5hrs and goals can be met in one session to several sessions depending on the individual.  Insurances are billed for services or there is a sliding fee scale from $50 to $120.00.
+
+</Paragraph>
+      </Spacer>
     </Container>
   )
 }
