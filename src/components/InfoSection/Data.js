@@ -46,7 +46,7 @@ export const homeObjThree = {
   description: 'Today you are one step closer to a new you where you feel empowered and on a positive and healthy path to growth and well-being.',
   buttonLabel: 'Send me a message',
   imgStart: false,
-  img: require('../../images/yellowstone.jpg').default,
+  img: require('../../images/profile.jpg').default,
   alt: 'profile image',
   dark: true,
   primary: true,
