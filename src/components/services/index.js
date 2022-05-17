@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Icon1 from '../../images/Cherijaelin2.jpg';
-import Icon2 from '../../images/office.JPG';
+import Icon2 from '../../images/Workplace4.jpg';
 import Icon3 from '../../images/Cheri2.jpg';
 import {
   ServicesContainer,
