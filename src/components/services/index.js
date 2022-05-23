@@ -65,7 +65,7 @@ const Services = () => {
           <ServicesIcon src={Icon1} />
           <ServicesH2>Equine Therapy</ServicesH2>
           <ServicesP>
-            Learn to heal and grow while working with horses. Click here to explore equine therapy!
+            Learn to heal and grow with equine therapy. Click here to explore equine therapy!
           </ServicesP>
         </ServicesCard>
       </ServicesWrapper>
