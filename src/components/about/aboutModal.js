@@ -121,7 +121,7 @@ export const AboutModal = ({ showModal, setShowModal }) => {
   function sendEmail(e) {
       e.preventDefault();
 
-  emailjs.sendForm('service_h7ocasz', 'template_9jtaijk', e.target, 'user_WiyfsTUJQi6oy6E5vtgvY')
+  emailjs.sendForm('service_fesuh2r', 'template_1fwm80o', e.target, 'oh4jWxCIQ2SN2dzAN')
       .then((result) => {
           setSubmitSuccess(prev => !prev);
           return submitSuccess;
