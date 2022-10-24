@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   margin: 100px 2rem 50px 2rem;
+  min-height: 100vh;
 `;
 
 const Header = styled.h1`
